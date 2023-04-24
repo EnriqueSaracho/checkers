@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers Home</title>
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9905fafc47.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <h1>Checkers Pizza</h1>
+        <div id="line"></div>
+      </header>
+      <!-- header -->
+
+      <!-- primary navbar -->
+      <nav id="primaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./cart.html">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+      </nav>
+      <!-- primary navbar -->
+
+      <!-- secondary navbar -->
+      <nav id="secondaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="#" onclick="showNavbar()">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./cart.html">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showNavbar()"></i>
+      </nav>
+      <!-- secondary navbar -->
+
+      <!-- main -->
+      <main>
+        <!-- post 1 -->
+        <div class="singleContainer">
+          <div id="homePic1"></div>
+          <div class="component">
+            <h3>Pizza of the week</h3>
+            <p>
+              Introducing our Vegetarian Pizza of the Week! This delicious pizza
+              is perfect for those looking for a tasty and healthy alternative
+              to traditional meat toppings.
+            </p>
+            <p class="price">$12.99</p>
+            <button type="button">Order</button>
+          </div>
+        </div>
+
+        <div class="doubleContainer">
+          <!-- post 2 -->
+          <div class="subcontainer">
+            <div class="component">
+              <h3>Elevate Your Dining Experience</h3>
+              <p>
+                Try pairing your favorite pizzas with a delicious drink or
+                dessert! At our pizza place, we've curated a selection of
+                recommended pairings to enhance your dining experience.
+              </p>
+              <p class="price"></p>
+              <button type="button">Check it out!</button>
+            </div>
+            <div id="homePic2"></div>
+          </div>
+
+          <div class="subcontainer">
+            <div class="videoComponent">
+              <video controls id="homeVid1">
+                <source src="./media/pizza.mp4" type="video/mp4" />
+                <a href="./media/pizza.mp4">Download the video file</a>
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="doubleContainer">
+          <div class="subcontainer">
+            <div class="audioComponent">
+              <h3>Italian Story</h3>
+              <p>Relaxing Acoustic Nylon Guitar</p>
+              <audio controls>
+                <source src="./media/italian-story.mp3" type="audio/mp3" />
+                <a href="./media/italian-story.mp3">Download the audio file</a>
+              </audio>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <div class="component">
+              <h3>Meet the Local Producers Behind Our Pizzas</h3>
+              <p>
+                At our pizza place, we believe in using fresh, locally sourced
+                ingredients to create delicious and sustainable pizzas.
+              </p>
+              <p class="price"></p>
+              <button type="button">Check it out!</button>
+            </div>
+            <div id="homePic3"></div>
+          </div>
+        </div>
+
+        <div class="singleContainer">
+          <div id="homePic4"></div>
+          <div class="component">
+            <h3>
+              Let Us Cater Your Next Event: Delicious Pizzas for Any Occasion
+            </h3>
+            <p>
+              Planning a special event or celebration? Let our pizza place
+              handle the catering so you can focus on enjoying the party!
+            </p>
+            <p class="price"></p>
+            <button type="button">Call us!</button>
+          </div>
+        </div>
+      </main>
+      <!-- main -->
+
+      <!-- footer -->
+      <footer>
+        <p>Checkers 2023</p>
+      </footer>
+      <!-- footer -->
+    </div>
+  </body>
+</html>

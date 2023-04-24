@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers Cart</title>
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9905fafc47.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <h1>Checkers Pizza</h1>
+        <div id="line"></div>
+      </header>
+      <!-- header -->
+
+      <!-- primary navbar -->
+      <nav id="primaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+      </nav>
+      <!-- primary navbar -->
+
+      <!-- secondary navbar -->
+      <nav id="secondaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="#" onclick="showNavbar()">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showNavbar()"></i>
+      </nav>
+      <!-- secondary navbar -->
+
+      <!-- main -->
+      <main id="cart-main">
+        <div id="cart-container">
+          <table>
+            <caption>
+              Cart
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" class="align-center"></th>
+                <th scope="col" class="align-center">Item</th>
+                <th scope="col" class="align-center">Quantity</th>
+                <th scope="col" class="align-center">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Pepperoni</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;1&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$14.99</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BBQ Chicken</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;1&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$16.99</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Garlic Knots</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;2&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$11.98</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Ceasar Salad</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;1&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$8.99</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Cannoli</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;1&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$5.99</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Iced tea</td>
+                <td class="align-center">
+                  &nbsp;
+                  <i class="fas fa-angle-left table-icon"></i>&nbsp;2&nbsp;<i
+                    class="fas fa-angle-right table-icon"
+                  ></i
+                  >&nbsp;
+                </td>
+                <td class="align-center">$5.98</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="align-right"><strong>Total</strong></td>
+                <td class="align-center"><strong>$64.92</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div id="btn-div">
+            <button type="button">Clear</button>
+            <button type="button">Order</button>
+          </div>
+        </div>
+      </main>
+      <!-- main -->
+
+      <!-- footer -->
+      <footer>
+        <p>Checkers 2023</p>
+      </footer>
+      <!-- footer -->
+    </div>
+  </body>
+</html>

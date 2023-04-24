@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers Menu</title>
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9905fafc47.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header>
+        <h1>Checkers Pizza</h1>
+        <div id="line"></div>
+      </header>
+      <!-- header -->
+
+      <!-- primary navbar -->
+      <nav id="primaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="./cart.html">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+      </nav>
+      <!-- primary navbar -->
+
+      <!-- secondary navbar -->
+      <nav id="secondaryNav">
+        <h2>Checkers</h2>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#" onclick="showNavbar()">Menu</a></li>
+          <li><a href="./cart.html">Cart</a></li>
+          <li><a href="./account.html">Account</a></li>
+        </ul>
+        <i class="fas fa-bars" onclick="showNavbar()"></i>
+      </nav>
+      <!-- secondary navbar -->
+
+      <!-- main -->
+      <main>
+        <!-- pizza -->
+        <div class="menu-section">
+          <h2>Pizza</h2>
+          <div class="h2-line"></div>
+          <div class="menu-container">
+            <div class="menu-item" onclick="addItem('Pepperoni pizza')">
+              <div class="menu-img" id="img-pepperoni"></div>
+              <div class="menu-item-text">
+                <h4>Pepperoni</h4>
+                <p>$14.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Margherita pizza')">
+              <div class="menu-img" id="img-margherita"></div>
+              <div class="menu-item-text">
+                <h4>Margherita</h4>
+                <p>$12.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('BBQ Chicken pizza')">
+              <div class="menu-img" id="img-bbq-chicken"></div>
+              <div class="menu-item-text">
+                <h4>BBQ Chicken</h4>
+                <p>$16.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Vegetarian pizza')">
+              <div class="menu-img" id="img-vegetarian"></div>
+              <div class="menu-item-text">
+                <h4>Vegetarian</h4>
+                <p>$15.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Meat Lovers pizza')">
+              <div class="menu-img" id="img-meat-lovers"></div>
+              <div class="menu-item-text">
+                <h4>Meat Lovers</h4>
+                <p>$17.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- appetizers -->
+        <div class="menu-section">
+          <h2>Appetizers</h2>
+          <div class="h2-line"></div>
+          <div class="menu-container">
+            <div class="menu-item" onclick="addItem('Bruschetta order')">
+              <div class="menu-img" id="img-bruschetta"></div>
+              <div class="menu-item-text">
+                <h4>Bruschetta</h4>
+                <p>$6.99</p>
+              </div>
+            </div>
+
+            <!-- <div class="menu-item" onclick="addItem('Garlic Knots order')">
+              <div class="menu-img" id="img-garlic-knots"></div>
+              <div class="menu-item-text">
+                <h4>Garlic Knots</h4>
+                <p>$5.99</p>
+              </div>
+            </div> -->
+
+            <div class="menu-item" onclick="addItem('Mozzarella Sticks order')">
+              <div class="menu-img" id="img-mozzarella-sticks"></div>
+              <div class="menu-item-text">
+                <h4>Mozzarella Sticks</h4>
+                <p>$8.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- salads -->
+        <div class="menu-section">
+          <h2>Salads</h2>
+          <div class="h2-line"></div>
+          <div class="menu-container">
+            <div class="menu-item" onclick="addItem('Ceasar Salad')">
+              <div class="menu-img" id="img-ceasar-salad"></div>
+              <div class="menu-item-text">
+                <h4>Caesar Salad</h4>
+                <p>$7.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Greek Salad')">
+              <div class="menu-img" id="img-greek-salad"></div>
+              <div class="menu-item-text">
+                <h4>Greek Salad</h4>
+                <p>$8.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Caprese Salad')">
+              <div class="menu-img" id="img-caprese-salad"></div>
+              <div class="menu-item-text">
+                <h4>Caprese Salad</h4>
+                <p>$10.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- desserts -->
+        <div class="menu-section">
+          <h2>Desserts</h2>
+          <div class="h2-line"></div>
+          <div class="menu-container">
+            <div class="menu-item" onclick="addItem('Tiramisu')">
+              <div class="menu-img" id="img-tiramisu"></div>
+              <div class="menu-item-text">
+                <h4>Tiramisu</h4>
+                <p>$6.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Cannoli')">
+              <div class="menu-img" id="img-cannoli"></div>
+              <div class="menu-item-text">
+                <h4>Cannoli</h4>
+                <p>$5.99</p>
+              </div>
+            </div>
+
+            <div
+              class="menu-item"
+              onclick="addItem('Chocolate Chip Cookie order')"
+            >
+              <div class="menu-img" id="img-chocolate-chip-cookies"></div>
+              <div class="menu-item-text">
+                <h4>Chocolate Chip Cookies</h4>
+                <p>$2.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- beverages -->
+        <div class="menu-section">
+          <h2>Beverages</h2>
+          <div class="h2-line"></div>
+          <div class="menu-container">
+            <div class="menu-item" onclick="addItem('Soft drink')">
+              <div class="menu-img" id="img-soft-drinks"></div>
+              <div class="menu-item-text">
+                <h4>Soft drinks</h4>
+                <p>$6.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Iced Tea')">
+              <div class="menu-img" id="img-iced-tea"></div>
+              <div class="menu-item-text">
+                <h4>Iced tea</h4>
+                <p>$2.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Lemonade')">
+              <div class="menu-img" id="img-lemonade"></div>
+              <div class="menu-item-text">
+                <h4>Lemonade</h4>
+                <p>$3.99</p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Beer')">
+              <div class="menu-img" id="img-beer"></div>
+              <div class="menu-item-text">
+                <h4>Beer</h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="menu-item" onclick="addItem('Wine')">
+              <div class="menu-img" id="img-wine"></div>
+              <div class="menu-item-text">
+                <h4>Wine</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main -->
+
+      <!-- footer -->
+      <footer>
+        <p>Checkers 2023</p>
+      </footer>
+      <!-- footer -->
+    </div>
+  </body>
+</html>
