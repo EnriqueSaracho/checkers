@@ -758,8 +758,12 @@ footer {
   font-style: italic;
   background: linear-gradient(34deg, #ff5500 10%, #ff9900 100%);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   color: #ffffff;
   border-radius: 8px 8px 0 0;
+}
+
+.references {
+  font-style: normal;
 }
 /* footer */
